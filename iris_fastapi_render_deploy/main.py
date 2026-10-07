@@ -45,6 +45,7 @@ def predict(data: IrisInput):
     probabilities = model.predict_proba(features)[0]
     names = metadata["target_names"]
     return {
+        "ID": "663380206-3 Hello It's ME!"
         "model_version": metadata["model_version"],
         "input": payload,
         "predicted_class_index": predicted,
